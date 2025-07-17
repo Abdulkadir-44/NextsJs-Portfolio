@@ -4,7 +4,7 @@ import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 import Link from "next/link";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaFacebook, FaTwitterSquare , FaStackOverflow } from "react-icons/fa";
+import { FaFacebook, FaTwitterSquare , FaStackOverflow, FaInstagram } from "react-icons/fa";
 import { MdDownload } from "react-icons/md";
 import { RiContactsFill } from "react-icons/ri";
 import { SiLeetcode } from "react-icons/si";
@@ -26,7 +26,7 @@ function HeroSection() {
             Hello, <br />
             This is {' '}
             <span className=" text-pink-500">{personalData.name}</span>
-            {` , I'm a Junior `}
+            {` , I'm a  `}
             <span className=" text-[#16f2b3]">{personalData.designation}</span>
             .
           </h1>
@@ -48,6 +48,12 @@ function HeroSection() {
             </Link>
             <Link target="_blank" href={personalData.stackOverflow}>
               <FaStackOverflow
+                className="transition-all text-pink-500 hover:scale-125 duration-300"
+                size={30}
+              />
+            </Link>
+            <Link target="_blank" href={personalData.instagram}>
+              <FaInstagram
                 className="transition-all text-pink-500 hover:scale-125 duration-300"
                 size={30}
               />
@@ -118,6 +124,16 @@ function HeroSection() {
                 <span className="text-amber-300">AWS</span>
                 <span className="text-gray-400">{"', '"}</span>
                 <span className="text-amber-300">HTML</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Python</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">LLM</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Typescript</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">Javascript</span>
+                <span className="text-gray-400">{"', '"}</span>
+                <span className="text-amber-300">AI Tools</span>
                 <span className="text-gray-400">{"'],"}</span>
               </div>
               <div>
