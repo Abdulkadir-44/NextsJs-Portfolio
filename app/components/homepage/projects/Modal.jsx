@@ -42,11 +42,11 @@ export default function Modal({ onClose, children }) {
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0.95, opacity: 0 }}
           transition={{ duration: 0.2, ease: "easeOut" }}
-          className="bg-white rounded-md sm:rounded-lg mx-4 p-2 sm:p-4 md:p-6 w-full sm:w-[90vw] md:w-[70vw] lg:w-[55vw] xl:w-[45vw] max-h-[90vh] overflow-y-auto relative flex flex-col shadow-2xl"
+          className="bg-gradient-to-r to-purple-800 from-violet-800 rounded-md sm:rounded-lg mx-4 p-2 sm:p-4 md:p-6 w-full sm:w-[90vw] md:w-[70vw] lg:w-[55vw] xl:w-[75vw] max-h-[90vh] overflow-y-auto relative flex flex-col shadow-2xl"
         >
           {/* Kapatma Butonu */}
           <button
-            className="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-3xl"
+            className="absolute top-2 right-2 text-red-500 hover:text-red-700 text-3xl"
             onClick={onClose}
             aria-label="Kapat"
           >

@@ -22,7 +22,8 @@ export const projectsData = [
         role: 'Full Stack Developer',
         code: '',
         demo: '',
-        image: travel,
+        smallImage : true,
+        image: ["/project_image/pdfmerge/pdf_image.png"],
     },
     {
         id: 3,
@@ -32,7 +33,7 @@ export const projectsData = [
         role: 'Full Stack Developer',
         code: '',
         demo: '',
-        image: travel,
+        image: ["/project_image/hospital/r1.png","/project_image/hospital/r2.png","/project_image/hospital/r3.png","/project_image/hospital/r4.png"],
     },
     {
         id: 4,

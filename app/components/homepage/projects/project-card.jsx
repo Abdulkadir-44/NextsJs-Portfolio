@@ -78,7 +78,7 @@ function ProjectCard({ project }) {
       {/* Modal */}
       {showModal && (
         <Modal onClose={() => setShowModal(false)}>
-          <h2 className="text-2xl font-semibold mb-4 text-center text-[#1a1443]">
+          <h2 className="text-2xl font-semibold mb-4 text-center text-white">
             Proje Görselleri
           </h2>
 
@@ -87,12 +87,12 @@ function ProjectCard({ project }) {
               project.image.map((imgSrc, idx) => (
                 <div
                   key={idx}
-                  className="w-full max-w-[600px] mx-auto h-[420px] rounded-lg overflow-hidden border border-gray-300 shadow"
+                  className="w-full max-w-[950px]  mx-auto h-[450px] rounded-lg overflow-hidden border border-gray-300 "
                 >
                   <img
                     src={imgSrc}
                     alt={`Proje görseli ${idx + 1}`}
-                    className="object-cover w-full h-full"
+                    className={`${project.smallImage ? 'object-contain bg-gray-100' : 'object-cover'} w-full h-full`}
                   />
                 </div>
               ))
