@@ -34,6 +34,8 @@ body {
 }
 
 .sticky-card {
-  // padding-top: calc(var(--index) * 2.5rem);
+  // // padding-top: calc(var(--index) * 2.5rem);
+  // top: calc(var(--index) * 4rem);
   top: calc(var(--index) * 4rem);
+  z-index: 0; 
 }

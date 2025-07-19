@@ -12,7 +12,7 @@ export const projectsData = [
         role: 'Backend and Frontend Developer',
         code: '',
         demo: '',
-        image: crefin,
+        image: ["/profile.jpeg","/profile.jpeg"],
     },
     {
         id: 2,
