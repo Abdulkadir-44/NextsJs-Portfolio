@@ -53,7 +53,7 @@ export const projectsData = [
         role: 'Full Stack Developer',
         code: '',
         demo: '',
-        image: travel,
+        image: ["/project_image/movie/m1.png","/project_image/movie/m2.png","/project_image/movie/m3.png"],
     },
         
 ];
